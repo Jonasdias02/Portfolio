@@ -17,11 +17,12 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 16px;
+    padding: 5px;
 }
 .cabeçalho-imagem{
-    height: 70px;
+    height: 120px;
     border-radius: 50px;
+    
 
 }
 
