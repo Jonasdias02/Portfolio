@@ -14,20 +14,20 @@ body{
     justify-content: center;
 }    
 .container{
-    width: 85%;
+    width: 68%;
     background: rgba(255, 255, 255, 0.386);
     border-radius: 6px;
-    padding: 20px 60px 30px 40px;
+    padding: 30px 60px 30px 60px;
     box-shadow: 0 5px 10px rgb( 0,0,0, 0.2);
 }
 .container .content .left-side{
-    width: 25%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
     position: relative;
 }
 .content .left-side::before{
@@ -41,7 +41,7 @@ body{
     background: orange;
 }
 .content .left-side .details{
-    margin: 14px;
+    margin: 5px;
     text-align: center;
 }
 .content .left-side .details i{
@@ -59,8 +59,9 @@ body{
     color: #afafb6;
 }
 .container .content .right-side{
-    width: 75%;
-    margin-left: 75px;
+    width: 85%;
+    margin-left: 118px;
+    padding-top: 15px;
 }
 .container .right-side .topic-text{
     font-size: 23px;
@@ -74,21 +75,20 @@ body{
 }
 .right-side .input-box input,
 .right-side .input-box textarea{
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     border: none;
     outline: none;
     font-size: 16px;
     background: #afafb6;
     border-radius: 6px;
-    padding: 0 15px;
     resize: none;
 }
 .right-side .message-box{
-    min-height: 6px;
+    min-height: 5px;
 }
 .right-side .input-box textarea{
-    padding-top: 6px;
+    padding-top: 5px;
 }
 .right-side .button input[type="button"]:hover{
     background: #c1ac9c;
@@ -127,6 +127,33 @@ body{
     }
 }
 
+.btn-1, .btn-2 {
+    width: 14%;
+    margin: 2px;
+    padding: 8px;
+    
+}
+
 button{
-    margin-left: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    background: darkorange;
+    border: 3px solid darkorange;
+    margin-top: 1px;
+    font-size: 12px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+#mensagemErro {
+    color: red;
+    height: 6px;
+    padding: 5px;
 }

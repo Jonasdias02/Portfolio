@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=stylesheet href="Formulario.css">
+    <link rel=stylesheet href="../style/Formulario.css">
     <title>Formulario de contato responsivo - Jonas Ferreira</title>
 </head>
 <body>
@@ -32,22 +32,26 @@
         </div>
         <div class="right-side">
             <div class="topic-box">Envie sua mensagem</div>
-            <p>Se você tiver algum trabalho ou oportunidade.
-            </p>
-            <form action="#">
+            <p>Se você tiver algum trabalho ou oportunidade.</p>
+            <p id="mensagemErro"></p>
+            <form onsubmit="return validarFormulario()">
                 <div class="input-box">
-                    <input type="text" placeholder="Digite seu nome">
+                    <input type="text"id ="nome" placeholder="Digite seu nome" name="nome" required>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Digite seu email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
                 </div>
                 <div class="input-box message-box">
-                    <textarea placeholder="Digite sua mensagem"></textarea>
+                    <textarea type="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
                 </div>
+                
                 <div class="button">
-                    <input type="button" value="Enviar"><button> <a href="index.html">Pagina inicial</a></button>
+                    <button class="btn-1" id="submitBtn"><a href="">Enviar</a></button>
+                    <button class="btn-2"><a href="../index.html">Pagina inicial</a></button>
                 </div>
+                
             </form>
+            <script src="Formulario.js"></script>
         </div>
     </div>
 </body>

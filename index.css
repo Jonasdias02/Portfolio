@@ -64,10 +64,20 @@ a{
 }
 
 .conteudo-principal-escrito-titulo{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrolling 5s linear infinite;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 64px;
     color: #fbf9f8 ;
+}
+@keyframes scrolling {
+    from {
+        transform: translateX(100%);
+    } to {
+        transform: translateX(-100%);
+    }
 }
 
 .conteudo-principal-escrito-subtitulo {
